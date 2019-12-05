@@ -2,16 +2,19 @@ import React from 'react'
 import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import './App.css'
-import { HomePage } from './pages'
+import { HomePage, AboutPage, StorePage, SubmitPage } from './pages'
+import Layout from './components/Layout'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route />
-        <Route />
-        <Route />
+        <Layout>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/about' component={AboutPage} />
+          <Route path='/store' component={StorePage} />
+          <Route path='/submit' component={SubmitPage} />
+        </Layout>
       </Switch>
     </Router>
   )
