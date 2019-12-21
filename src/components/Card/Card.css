@@ -1,0 +1,33 @@
+.card-main {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card h2 {
+  line-height: 2;
+  font-size: 1em;
+  font-weight: 300;
+  border-bottom: 1px solid #000;
+}
+
+.card h1 {
+  line-height: 1.5;
+  font-size: 1.325em;
+  font-weight: 700;
+  font-family: serif;
+}
+
+.images {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  float: left;
+  line-height: 0;
+  width: 100%;
+}
