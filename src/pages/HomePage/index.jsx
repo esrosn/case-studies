@@ -1,12 +1,13 @@
 import React from "react";
 import "./HomePage.css";
 import Card from "../../components/Card";
+import SmallCard from "../../components/SmallCard";
 
 const HomePage = () => {
   return (
     <>
       <main>
-        <section className="main-grid mv4">
+        <section className="main-grid mv4 pb4 bb b--black-10">
           {/* aside left */}
           <inner className="aside-left ">
             <div className="flex items-center justify-between">
@@ -45,21 +46,15 @@ const HomePage = () => {
           </inner>
         </section>
         <section className="secondary-grid mv4">
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
-          <inner className="article bg-yellow">hello</inner>
+          <div className="secondary-title">
+            <h2>Spotted</h2>
+          </div>
+          <SmallCard />
+          <SmallCard />
+          <SmallCard />
+          <SmallCard />
+          <SmallCard />
+          <SmallCard />
         </section>
       </main>
       {/* Footer Grid  gtc: 1fr 1fr 2fr 2fr*/}

@@ -3,9 +3,16 @@
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 2rem;
+  grid-column-gap: 2rem;
 }
 
+.secondary-grid {
+  grid-template-rows: 5vmin 1fr;
+}
+
+.secondary-title {
+  grid-column: span 6;
+}
 .aside-left {
   grid-column: 1;
 }
